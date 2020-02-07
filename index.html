@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>个人资料卡</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="profile-card">
+        <div class="content">
+          <nav id="nav-menu">
+            <a href="#" data-rel="about-me-section" class="active">个人简介</a>
+            <a href="#" data-rel="project-show-section">项目展示</a>
+            <div class="indicator"></div>
+          </nav>
+          <section class="about-me-section active-section">
+            <div class="personal-info">
+              <div class="title">
+                <h1>贺浩成</h1>
+                <p>九江职业技术学院/学生</p>
+              </div>
+              <button class="thumbs-btn">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>点赞
+              </button>
+            </div>
+            <div class="about-me">
+              <p>
+                我是一名在校大学生，就读于九江职业技术学院，软件技术专业，对前端开发有浓厚的兴趣，擅长使用HTML,CSS,JavaScript开发标准现代化网页，以及一个强迫症患者。
+              </p>
+            </div>
+            <footer>
+              <ul>
+                <li>
+                  <a href="#"><i class="fab fa-weixin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-qq"></i></a>
+                </li>
+                <li>
+                  <a href="https://weibo.com/5177747350" target="_blank"
+                    ><i class="fab fa-weibo"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/hcer1999" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </footer>
+          </section>
+          <section class="project-show-section ">
+            <div class="projects-show">
+              <div class="project-item">
+                <div class="project-name">仿小米商城</div>
+                <div class="seperator"></div>
+                <div class="project-info">
+                  <div class="main-points">
+                    <i class="fa fa-archive"></i>HTML,CSS,JS
+                  </div>
+                  <div class="project-link">
+                    <i class="fa fa-link"></i
+                    ><a href="http://47.106.72.62/mi/">点我预览</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-name">简约键盘</div>
+                <div class="seperator"></div>
+                <div class="project-info">
+                  <div class="main-points">
+                    <i class="fa fa-archive"></i>HTML,CSS,弹性布局,JS
+                  </div>
+                  <div class="project-link">
+                    <i class="fa fa-link"></i
+                    ><a href="http://47.106.72.62/key/">点我预览</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-name">学生管理系统</div>
+                <div class="seperator"></div>
+                <div class="project-info">
+                  <div class="main-points">
+                    <i class="fa fa-archive"></i>JS,BootStrap,PHP,Mysql
+                  </div>
+                  <div class="project-link">
+                    <i class="fa fa-link"></i
+                    ><a href="http://47.106.72.62/htgl/login.html">点我预览</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <aside class="profile-image">
+          <img src="images/me.jpg" alt="我" />
+        </aside>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="//cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"></script>
+  </body>
+</html>

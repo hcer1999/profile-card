@@ -1,0 +1,198 @@
+@import url("https://fonts.font.im/css?family=Montserrat");
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Microsoft Yahei", sans-serif;
+}
+
+:root {
+  --primary-color: #71b3dd;
+  --primary-dark-color: #4489b5;
+  --text-color-gray: #8b979f;
+  --text-color-light-gray: #c1c7cb;
+  --text-color-dark-gray: #5a6f7c;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+.profile-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 12px;
+  width: 627px;
+  height: 374px;
+  box-shadow: 0 0 22px 3px rgba(0, 0, 0, 0.18);
+}
+
+.profile-image {
+  grid-column: 8 / 13;
+  max-width: 238px;
+  height: 100%;
+  overflow: hidden;
+  align-self: start;
+  justify-self: end;
+}
+.profile-card img {
+  width: 210%;
+  transform: translate(-20px, -170px);
+  object-fit: cover;
+}
+
+.content {
+  grid-column: 1 / 8;
+  padding: 38px 28px 20px 33px;
+  position: relative;
+}
+
+nav {
+  margin-bottom: 24px;
+  display: flex;
+  position: relative;
+}
+
+nav a {
+  color: var(--text-color-gray);
+  text-decoration: none;
+}
+nav a.active {
+  color: var(--primary-dark-color);
+}
+nav a:not(:last-child) {
+  margin-right: 40px;
+}
+nav .indicator {
+  height: 2px;
+  background: var(--primary-dark-color);
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  transition: 0.4s;
+}
+
+/* 个人简介 */
+.content section {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.content section.active-section {
+  opacity: 1;
+}
+.about-me-section {
+  z-index: 999;
+}
+.personal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+.title p {
+  color: var(--text-color-gray);
+  margin: 6px 0 18px 0;
+}
+.thumbs-btn {
+  justify-self: end;
+  height: 30px;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 0 27px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.thumbs-btn .fa {
+  font-size: 10px;
+  margin-right: 6px;
+}
+
+.about-me {
+  color: var(--text-color-dark-gray);
+  font-weight: 300;
+  text-align: justify;
+}
+footer {
+  margin-top: 70px;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+footer ul li a:hover i {
+  transform: scale(1.5);
+  color: #2980b9;
+}
+
+footer ul li:not(:last-child) {
+  margin-right: 30px;
+}
+footer .fab {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+/* 项目展示 */
+.project-show-section {
+  z-index: 0;
+}
+
+.projects-show {
+  color: var(--text-color-gray);
+  display: grid;
+  grid-template-rows: repeat(3, minmax(80px, auto));
+}
+.project-item {
+  display: grid;
+  grid-template-columns: 5fr 1fr 8fr;
+  align-items: center;
+  justify-content: center;
+}
+.project-item i {
+  margin-right: 4px;
+}
+.project-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.seperator {
+  height: 43px;
+  border-left: 2px dotted #eaeff2;
+}
+
+.main-points {
+  color: var(--text-color-light-gray);
+}
+
+.project-link {
+  font-size: 14px;
+  color: var(--text-color-dark-gray);
+  margin-top: 9px;
+}
+.project-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
